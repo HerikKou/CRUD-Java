@@ -17,7 +17,7 @@ public class Service {
     }
     public  Produto Cadastrar(Produto produtos){
         if(listadeProdutos.stream().anyMatch(p-> produtos.getId() == p.getId())){
-            System.out.println("Produto já cadastrado!");
+            System.out.println("Produto já cadastrado!!");
             return null;
         }
         listadeProdutos.add(produtos);
